@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: psdfs
+
+
+psdfs:
+  path: ${user.home}/psdfs
+  isSync: true
+  backupUrl: http://localhost:8081/psdfs
