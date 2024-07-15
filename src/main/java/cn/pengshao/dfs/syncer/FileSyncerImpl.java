@@ -1,5 +1,7 @@
 package cn.pengshao.dfs.syncer;
 
+import org.springframework.stereotype.Component;
+
 import java.io.File;
 
 /**
@@ -8,6 +10,7 @@ import java.io.File;
  * @Author: yezp
  * @date 2024/7/14 21:38
  */
+@Component
 public class FileSyncerImpl implements FileSyncer {
 
     HttpSyncer httpSyncer = new HttpSyncer();

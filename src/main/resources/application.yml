@@ -1,9 +1,11 @@
 spring:
   application:
     name: psdfs
-
+  web:
+    resources:
+      static-locations: classpath:/static/, classpath:/resources/static/
 
 psdfs:
   path: ${user.home}/psdfs
   isSync: true
-  backupUrl: http://localhost:8081/psdfs
+  backupUrl: http://localhost:8081/upload
