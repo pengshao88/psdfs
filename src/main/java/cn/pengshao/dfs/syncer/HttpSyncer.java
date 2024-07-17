@@ -25,6 +25,7 @@ public class HttpSyncer implements FileSyncer {
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.MULTIPART_FORM_DATA);
         headers.set("X-Filename", file.getName());
+
         MultipartBodyBuilder builder = new MultipartBodyBuilder();
         builder.part("file", new FileSystemResource(file));
 
