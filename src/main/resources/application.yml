@@ -6,10 +6,18 @@ spring:
       static-locations: classpath:/static/, classpath:/resources/static/
 
 psdfs:
-  path: ${user.home}/psdfs
+  uploadPath: ${user.home}/psdfs
   autoMd5: true
   group: C8090
   topic: psdfs
   syncBackup: false
   backupUrl: http://localhost:8091/upload
   downloadUrl: http://localhost:8090/download
+
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: psdfs-producer
+
+server:
+  port: 8090

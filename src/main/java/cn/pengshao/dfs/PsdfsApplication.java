@@ -28,7 +28,7 @@ public class PsdfsApplication {
         SpringApplication.run(PsdfsApplication.class, args);
     }
 
-    @Value("${psdfs.path}")
+    @Value("${psdfs.uploadPath}")
     private String uploadPath;
 
     @Bean
